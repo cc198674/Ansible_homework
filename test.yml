@@ -1,0 +1,6 @@
+---
+- hosts: aws
+  gather_facts: no
+  remote_user: root
+  roles:
+  - wordpress

@@ -1,0 +1,6 @@
+- name: Removing Wordpress.tar
+  file: path=/tmp/wordpress.tar state=absent
+
+- name: Removing Wodpress Extracted Directory.
+  file: path=/tmp/wordpress state=absent
+

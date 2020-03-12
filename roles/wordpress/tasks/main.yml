@@ -1,0 +1,7 @@
+- include: yum.yml
+- include: service.yml
+- include: mysql.yml
+- include: download.yml
+- include: clean.yml
+- include: config.yml
+- include: final.yml

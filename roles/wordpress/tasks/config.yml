@@ -1,0 +1,2 @@
+- name: copy template
+  template: src=config.php.j2 dest=/var/www/html/wp-config.php

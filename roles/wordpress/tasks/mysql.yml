@@ -1,0 +1,12 @@
+- name: mysql-removing anon users.
+  mysql_user: login_user=root login_password='' name=''  host_all=yes state=absent
+ 
+- name: Creating Wordpress Database.
+  mysql_db: db="{{wordpress_db}}" state=present
+
+- name: Creating wordpress user.
+  mysql_user: name="{{wordpress_user}}" host=localhost password="{{wordpress_password}}"  priv="{{wordpress_db}}.*:ALL"
+
+- name: Updating MySql-Root Password.
+  mysql_user: name=root host_all=yes password="{{mysql_root_password}}"
+

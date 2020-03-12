@@ -1,0 +1,5 @@
+mysql_root_password: ab123cd456
+wordpress_db: wordpress
+wordpress_user: wordpress
+wordpress_password: wordpress
+

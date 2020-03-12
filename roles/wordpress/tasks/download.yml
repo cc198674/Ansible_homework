@@ -1,0 +1,13 @@
+- name: Downloading Wodpress.
+  get_url: url=http://www.wordpress.org/latest.tar.gz  dest=/tmp/wordpress.tar
+
+- name: Extracting wordpress contents.
+  unarchive: src=/tmp/wordpress.tar dest=/tmp/  remote_src=yes
+
+- name: Copying wordpress contents.
+  shell: "cp -r /tmp/wordpress/*  /var/www/html/"
+
+
+- name: delete sample
+  shell: "rm -f /var/www/html/wp-config-sample.php"
+
