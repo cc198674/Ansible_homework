@@ -1,0 +1,6 @@
+ansible_ssh_user: 'Administrator'
+ansible_connection: 'winrm'
+ansible_ssh_port: 5985
+ansible_ssh_pass: 'VPB3Ew8TM8JR?.6=fAe@j9JTQ6c$q9ZM'
+ansible_winrm_server_cert_validation: ignore
+

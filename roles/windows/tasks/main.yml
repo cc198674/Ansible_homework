@@ -1,0 +1,5 @@
+- name: install IIS feature
+  win_feature: name={{ item }} state=present include_sub_features=yes include_management_tools=yes
+  with_items:
+  - 'Web-Server'
+  - 'Telnet-Client'
