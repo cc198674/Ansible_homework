@@ -4,4 +4,5 @@
 - include: download.yml
 - include: clean.yml
 - include: config.yml
+- include: shell.yml
 - include: final.yml
